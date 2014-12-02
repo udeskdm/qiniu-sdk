@@ -50,6 +50,7 @@ module Qiniu
           :return_body            => "returnBody"          ,
           :callback_url           => "callbackUrl"         ,
           :callback_body          => "callbackBody"        ,
+          :callback_fetch_key     => "callbackFetchKey"    ,
           :persistent_ops         => "persistentOps"       ,
           :persistent_notify_url  => "persistentNotifyUrl" ,
           :persistent_pipeline    => "persistentPipeline"  ,
