@@ -95,7 +95,7 @@ module Qiniu
                                  x_vars = nil,
                                  opts = {})
         uptoken = Auth.generate_uptoken(put_policy)
-        puts 'uptoken:' + uptoken
+        yield(uptoken) if block_given?
         if key.nil? then
           key = put_policy.key
         end
