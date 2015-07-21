@@ -93,7 +93,8 @@ module Qiniu
                                  local_file,
                                  key = nil,
                                  x_vars = nil,
-                                 opts = {})
+                                 opts = {},
+                                 &block)
         uptoken = Auth.generate_uptoken(put_policy)
         yield(uptoken) if block_given?
         if key.nil? then
